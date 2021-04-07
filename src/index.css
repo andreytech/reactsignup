@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Muli Semibold";
+  src: local("Muli Semibold"), url(./fonts/Muli-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Muli Regular";
+  src: local("Muli Regular"), url(./fonts/Muli-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Muli Bold";
+  src: local("Muli Bold"), url(./fonts/Muli-Bold.ttf) format("truetype");
+}
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/background.png);
+  font-family: "Muli Regular";
+  width: 100%;
+  height: 100%;
+  padding: 4% 0 20%;
+}
+.popup-box {
+  width: 500px;
+  margin: 0 auto;
+}
+.btn-nav {
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+  opacity: 1;
+  width: 162px;
+  height: 45px;
+  font: 24px/26px "Muli Semibold";
+  color: #ffffff;
+  letter-spacing: 0.6px;
+  margin: 0 auto;
+}
+.btn-facebook {
+  background-color: #3b5998;
+  color: #fff;
+  font: 16px/20px "Muli Bold";
+  letter-spacing: 0.4px;
+  height: 45px !important;
+}
+.btn-google {
+  background-color: #ea4335;
+  color: #fff;
+  font: 16px/20px "Muli Bold";
+  letter-spacing: 0.4px;
+  height: 45px !important;
+}
+.btn-facebook span,
+.btn-google span {
+  margin: 0 10px;
+}
+.navigation {
+  padding: 0 1.5rem 5rem !important;
+}
+.popup-box-body {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 7px #5556ab29;
+  border-radius: 5px;
+  opacity: 1;
+  padding: 28px 40px;
+  position: relative;
+}
+.popup-box-body h1 {
+  font: 24px/26px "Muli Semibold";
+  text-align: center;
+  letter-spacing: 0.6px;
+  color: #393b41;
+  opacity: 1;
+  margin-bottom: 24px;
+}
+input[type="text"],
+input[type="password"] {
+  height: 45px !important;
+}
+input::placeholder {
+  font: 14px/18px "Muli Regular";
+  letter-spacing: 0.35px;
+  color: #babec6;
+}
+.password-block {
+  position: relative;
+}
+.show-password {
+  background: #f3f5f9 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  border: 0;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  font: 14px/18px "Muli Regular";
+  letter-spacing: 0.35px;
+  color: #393b41;
+  width: 73px;
+  height: 30px;
+}
+.invalid-feedback {
+  display: block;
+}
+.btn-custom {
+  font: 17px/18px "Muli Semibold";
+  letter-spacing: 0.42px;
+  color: #fff;
+  background-color: #2d6cc0;
+  border-color: #2d6cc0;
+  height: 45px !important;
+}
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+}
+.hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #818078;
+  background-color: #fcfcfa;
+}
+.have-account {
+  font: 17px/21px "Muli Regular";
+  letter-spacing: 0.42px;
+  color: #393b41;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  font-size: 20px;
+}
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font: 14px/18px "Muli Regular";
+  letter-spacing: 0.35px;
+  color: #393b41;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.forgot-password-link {
+  text-align: center;
+  font: 14px/18px "Muli Regular";
+  letter-spacing: 0.35px;
+  color: #747984;
+  margin: 20px auto 0;
+  display: block;
+}
